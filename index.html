@@ -1356,16 +1356,20 @@
         }
 
         @media (max-width: 768px) {
-            body { padding: var(--space-sm); }
-            .app-container { gap: var(--space-sm); }
-            .glass-panel { border-radius: var(--radius-lg); }
+            body { padding: var(--space-sm); overflow-x: hidden; }
+            .app-container { gap: var(--space-sm); padding: var(--space-sm); max-width: 100%; overflow-x: hidden; }
+            .glass-panel { border-radius: var(--radius-lg); max-width: 100%; overflow: hidden; }
             .header { padding: var(--space-md); }
             .header h1 { font-size: 1.25rem; }
-            .left-stack, .right-stack { gap: var(--space-sm); }
+            .left-stack, .right-stack { gap: var(--space-sm); min-width: 0; }
+            .main-grid { min-width: 0; }
             .panel-header { padding: var(--space-md); }
             .panel-footer { padding: var(--space-sm) var(--space-md); }
-            .table-container { padding: var(--space-sm); }
+            .table-container { padding: var(--space-sm); min-width: 0; }
             .search-bar { padding: var(--space-sm) var(--space-md) 0; }
+            .compact-row { min-width: 0; }
+            .compact-desc { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+            .row-detail { overflow-x: auto; }
             .chart-container { padding: var(--space-md) var(--space-md) var(--space-sm); }
             .chart-wrapper { width: 220px; height: 220px; }
             .chart-wrapper canvas { width: 220px; height: 220px; }
