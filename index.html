@@ -1355,6 +1355,31 @@
             .chart-wrapper canvas { width: 260px; height: 260px; }
         }
 
+        @media (max-width: 768px) {
+            body { padding: var(--space-sm); }
+            .app-container { gap: var(--space-sm); }
+            .glass-panel { border-radius: var(--radius-lg); }
+            .header { padding: var(--space-md); }
+            .header h1 { font-size: 1.25rem; }
+            .left-stack, .right-stack { gap: var(--space-sm); }
+            .panel-header { padding: var(--space-md); }
+            .panel-footer { padding: var(--space-sm) var(--space-md); }
+            .table-container { padding: var(--space-sm); }
+            .search-bar { padding: var(--space-sm) var(--space-md) 0; }
+            .chart-container { padding: var(--space-md) var(--space-md) var(--space-sm); }
+            .chart-wrapper { width: 220px; height: 220px; }
+            .chart-wrapper canvas { width: 220px; height: 220px; }
+            .metas-panel { padding: var(--space-md); }
+            .metas-panel-header { margin-bottom: var(--space-md); }
+            .meta-card-img, .meta-card-placeholder { width: 56px; height: 56px; border-radius: 8px; }
+            .meta-card-placeholder { font-size: 1.2rem; }
+            .panel-title { font-size: 0.85rem; }
+            .panel-subtitle { font-size: 0.55rem; }
+            .compact-desc { font-size: 0.8rem; }
+            .compact-value { font-size: 0.8rem; }
+            .category-filters .category-pill { padding: 4px 8px; font-size: 0.6rem; }
+        }
+
         /* Sprint 2 - Wide screens */
         @media (min-width: 1600px) {
             .main-grid {
